@@ -1,0 +1,18 @@
+/* Only fonts + colors live here. Everything else is Tailwind classes. */
+@import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@theme {
+  --font-heading: "Cormorant Garamond", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+
+  --color-forest: #1b4332;
+  --color-leaf: #2d6a4f;
+  --color-sage: #74c69d;
+  --color-mist: #d8f3dc;
+  --color-cream: #f6fbf7;
+  --color-ink: #12261c;
+}
+
+body { font-family: var(--font-body); color: var(--color-ink); background: #fff; }
+h1, h2, h3, h4 { font-family: var(--font-heading); }
