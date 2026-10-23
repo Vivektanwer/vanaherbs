@@ -10,7 +10,9 @@ export default function CustomSourcing() {
        />
       <Section>
         <div className="flex flex-col items-center gap-10 md:flex-row">
-          <div data-reveal className="w-full md:w-1/2"><ImageBox alt="Himalayan botanicals" className="h-80" /></div>
+          <div data-reveal className="w-full md:w-1/2"><ImageBox alt="Himalayan botanicals" className="h-80"
+          src="/images/og-image.webp"
+          /></div>
           <div data-reveal className="md:w-1/2">
             <h2 className="text-4xl font-bold text-forest">How we handle your request</h2>
             <ul className="mt-5 flex flex-col gap-3">
