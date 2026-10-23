@@ -48,7 +48,7 @@ export default function About() {
           <div data-reveal className="rounded-2xl bg-mist p-8 md:w-1/2">
             <i className="bi bi-eye text-3xl text-leaf"></i>
             <h2 className="mt-2 text-3xl font-bold text-forest">Our Vision</h2>
-            <p className="mt-3">Our 20-year goal: a thriving Himalayan botanical economy where families can build their future at home, without having to migrate to earn a living. (Edit with your exact 20-year goal.)</p>
+            <p className="mt-3">Our 20-year goal: a thriving Himalayan botanical economy where families can build their future at home, without having to migrate to earn a living.</p>
           </div>
         </div>
       </Section>
