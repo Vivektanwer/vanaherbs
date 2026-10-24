@@ -83,8 +83,8 @@ export const HERO_POSTER = "";
 
 // Social links. Paste your page URL in "url". Empty ("") links are hidden automatically.
 export const social = [
-  { name: "Instagram", icon: "bi-instagram", url: "" },
-  { name: "Facebook", icon: "bi-facebook", url: "" },
+  { name: "Instagram", icon: "bi-instagram", url: "https://www.instagram.com/vanaherb?utm_source=qr&srtk=b2g5ZTcybzhmcGNx" },
+  { name: "Facebook", icon: "bi-facebook", url: "https://www.facebook.com/profile.php?id=61594926017754" },
   { name: "LinkedIn", icon: "bi-linkedin", url: "" },
   { name: "YouTube", icon: "bi-youtube", url: "" },
   { name: "X (Twitter)", icon: "bi-twitter-x", url: "" },
