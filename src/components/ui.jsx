@@ -76,13 +76,27 @@ export function VideoBox({ src }) {
 // Cards sit in a flex row that wraps (no CSS grid).
 export const cardWidth = "w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]";
 
+// export function ProductCard({ p }) {
+//   return (
+//     <article data-reveal className={cardWidth + " rounded-2xl bg-white p-4 shadow-md transition hover:-translate-y-1 hover:shadow-xl"}>
+//       <ImageBox src={p.image} alt={p.name} icon="bi-flower1" />
+//       <h3 className="mt-4 text-2xl font-bold text-forest">{p.name}</h3>
+//       <p className="text-sm italic text-leaf">{p.botanical}</p>
+//       <p className="mt-2 text-sm"><span className="font-bold">Form:</span> {p.form}</p>
+//     </article>
+//   );
+// }
+
 export function ProductCard({ p }) {
   return (
-    <article data-reveal className={cardWidth + " rounded-2xl bg-white p-4 shadow-md transition hover:-translate-y-1 hover:shadow-xl"}>
-      <ImageBox src={p.image} alt={p.name} icon="bi-flower1" />
-      <h3 className="mt-4 text-2xl font-bold text-forest">{p.name}</h3>
-      <p className="text-sm italic text-leaf">{p.botanical}</p>
-      <p className="mt-2 text-sm"><span className="font-bold">Form:</span> {p.form}</p>
+    <article data-reveal className={cardWidth + " rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-xl"}>
+      <Link to={"/contact?product=" + encodeURIComponent(p.name)} className="block p-4">
+        <ImageBox src={p.image} alt={p.name} icon="bi-flower1" />
+        <h3 className="mt-4 text-2xl font-bold text-forest">{p.name}</h3>
+        <p className="text-sm italic text-leaf">{p.botanical}</p>
+        <p className="mt-2 text-sm"><span className="font-bold">Form:</span> {p.form}</p>
+        <p className="mt-3 text-sm font-medium text-leaf">Request a quote <i className="bi bi-arrow-right"></i></p>
+      </Link>
     </article>
   );
 }
